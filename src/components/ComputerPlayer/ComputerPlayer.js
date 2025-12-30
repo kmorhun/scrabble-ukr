@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Modal from '../UI/Modal/Modal';
 import Spinner from '../UI/Spinner/Spinner';
@@ -22,5 +23,9 @@ class ComputerPlayer extends Component {
     </Auxiliary>
   }
 }
+
+ComputerPlayer.propTypes = {
+  componentDidMountHandler: PropTypes.func.isRequired
+};
 
 export default ComputerPlayer;

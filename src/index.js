@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { addLocaleData } from 'react-intl';
-import en from 'react-intl/locale-data/en';
-import uk from 'react-intl/locale-data/uk';
+import { IntlProvider } from 'react-intl';
 
-addLocaleData(en);
-addLocaleData(uk);
-
-ReactDOM.render(<App />, document.getElementById('root'));
+const locale = navigator.language;
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+    <IntlProvider locale={locale}>
+        <App />
+    </IntlProvider>
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

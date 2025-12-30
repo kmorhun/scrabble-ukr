@@ -1,4 +1,4 @@
-import messages from '../../messages';
+import { messages } from '../../messages.js';
 
 describe('messages', () => {
   it('has English', () => {

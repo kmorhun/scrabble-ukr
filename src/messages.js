@@ -1,4 +1,4 @@
-export default {
+const messages = {
   'en': {
     'yes': 'Yes',
     'no': 'No',
@@ -80,4 +80,6 @@ export default {
     'random': 'Випадкове',
     'standard': 'Стандартне'
   }
-}
+};
+
+export { messages };

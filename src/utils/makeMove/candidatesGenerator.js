@@ -1,6 +1,6 @@
 import indexToRowCol from '../board/indexToRowCol';
 import rowColToIndex from '../board/rowColToIndex';
-import Combinatorics from 'js-combinatorics';
+import { Combination, Permutation } from 'js-combinatorics';
 
 function* candidatesGenerator(tiles, rack, anchorIndex, boardSize, step) {
   const anchorRowCol = indexToRowCol(anchorIndex, boardSize);
@@ -46,11 +46,11 @@ function* candidatesGenerator(tiles, rack, anchorIndex, boardSize, step) {
   const maxCombinationLength = Math.min(lettersWithRackIndices.length, emptyTilesIndices.length);
   const seenCombinations = new Set();
   for (let combinationLength=maxCombinationLength; combinationLength > 1; combinationLength--) {
-    const combinations = Combinatorics.combination(lettersWithRackIndices, combinationLength);
+    const combinations = Combination(lettersWithRackIndices, combinationLength);
     let combination;
     // eslint-disable-next-line no-cond-assign
     while (combination = combinations.next()) {  
-      const permutations = Combinatorics.permutation(combination);
+      const permutations = Permutation(combination);
       let permuation;
       // eslint-disable-next-line no-cond-assign
       while (permuation = permutations.next()) {

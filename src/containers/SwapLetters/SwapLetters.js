@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Rack from '../../components/Board/Rack/Rack';
 import Button from '../../components/UI/Button/Button';
@@ -55,5 +56,14 @@ class SwapLetters extends Component {
     );
   }
 }
+
+SwapLetters.propTypes = {
+  playerRack: PropTypes.arrayOf(PropTypes.shape({
+    letter: PropTypes.string.isRequired,
+    index: PropTypes.number.isRequired,
+    selected: PropTypes.bool.isRequired
+  })).isRequired,
+  swapLettersHandler: PropTypes.func.isRequired
+};
 
 export default SwapLetters;

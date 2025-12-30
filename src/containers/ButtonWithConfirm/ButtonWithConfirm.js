@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Confirm from '../../components/UI/Confirm/Confirm';
 import Auxuliary from '../../hoc/Auxiliary/Auxiliary';
 import Button from '../../components/UI/Button/Button';
@@ -49,5 +50,12 @@ class ButtonWithConfirm extends Component {
     );
   }
 }
+
+ButtonWithConfirm.propTypes = {
+  action: PropTypes.func.isRequired,
+  question: PropTypes.string.isRequired,
+  caption: PropTypes.string.isRequired,
+  disabled: PropTypes.bool
+};
 
 export default ButtonWithConfirm;

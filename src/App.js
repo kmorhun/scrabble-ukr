@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Game from './containers/Game/Game';
 import { IntlProvider } from 'react-intl';
-import messages from './messages';
+import { messages } from './messages.js';
 
 class App extends Component {
   constructor(props) {

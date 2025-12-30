@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 
 class ToggleButton extends Component {
@@ -37,5 +38,12 @@ class ToggleButton extends Component {
     );
   }
 }
+
+ToggleButton.propTypes = {
+  isToggleOn: PropTypes.bool,
+  handler: PropTypes.func.isRequired,
+  captionOn: PropTypes.string.isRequired,
+  captionOff: PropTypes.string.isRequired
+};
 
 export default ToggleButton;

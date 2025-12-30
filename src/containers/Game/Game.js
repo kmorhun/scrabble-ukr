@@ -18,17 +18,21 @@ import ToggleButton from '../../components/UI/ToggleButton/ToggleButton';
 import ButtonWithConfirm from '../ButtonWithConfirm/ButtonWithConfirm';
 import styles from './Game.css';
 import FlexRow from '../../components/UI/FlexRow/FlexRow';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import axios from '../../axios-actions';
 import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import GameSettings from '../../components/GameSettings/GameSettings';
 import BlankTileSelectWindow from '../../components/Board/BlankTileSelectWindow/BlankTileSelectWindow';
+// const dictionary = require('../../assets/dict_ukr.json');
+import { dictionary } from '../../assets/dict_ukr.js';
+
+console.log(dictionary)
 
 class Game extends Component {
   constructor(props) {
     super(props);
-    this.dictionary = new Set(require('../../assets/dict_ukr.json'));
+    // this.dictionary = new Set(dictionary);
     
     this.state = {
       boardType: 'standard',
@@ -1013,7 +1017,11 @@ class Game extends Component {
 }
 
 Game.contextTypes ={
-  intl: PropTypes.object.isRequired
+  intl: PropTypes.object.isRequired,
+}
+
+Game.propTypes = {
+  toggleLangHandler: PropTypes.func.isRequired
 }
 
 export default Game;
