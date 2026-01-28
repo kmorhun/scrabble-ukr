@@ -4,7 +4,7 @@ import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Modal from '../UI/Modal/Modal';
 import Spinner from '../UI/Spinner/Spinner';
 import { FormattedMessage } from 'react-intl';
-import styles from './ComputerPlayer.css';
+import * as styles from './ComputerPlayer.css';
 
 class ComputerPlayer extends Component {
 

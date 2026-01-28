@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Rack.css';
+import * as styles from './Rack.css';
 import Square from '../Square/Square';
 import Letter from '../Letter/Letter';
 

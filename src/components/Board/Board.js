@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Board.css'
+import * as styles from './Board.css'
 import Square from './Square/Square';
 import Bonus from './Square/Bonus/Bonus';
 import Letter from './Letter/Letter';

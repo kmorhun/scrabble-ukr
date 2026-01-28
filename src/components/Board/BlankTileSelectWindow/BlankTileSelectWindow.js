@@ -1,6 +1,6 @@
 import React from 'react';
 import Auxiliary from '../../../hoc/Auxiliary/Auxiliary';
-import styles from './BlankTileSelectWindow.css';
+import * as styles from './BlankTileSelectWindow.css';
 import Letter from '../Letter/Letter';
 import Square from '../Square/Square';
 import { FormattedMessage } from 'react-intl';

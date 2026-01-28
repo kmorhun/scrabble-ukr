@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../UI/Card/Card';
 import { FormattedMessage } from 'react-intl';
 import ToggleButton from '../UI/ToggleButton/ToggleButton';
-import styles from './GameSettings.css';
+import * as styles from './GameSettings.css';
 
 const gameSettings = (props) => {
   return (

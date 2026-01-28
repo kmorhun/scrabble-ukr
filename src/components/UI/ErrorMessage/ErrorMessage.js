@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from '../Modal/Modal';
 import Button from '../Button/Button';
 import background from '../../../assets/error-bg.jpeg';
-import styles from './ErrorMessage.css';
+import * as styles from './ErrorMessage.css';
 
 const errorMessage = (props) => {
   const style = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FlexRow.css';
+import * as styles from './FlexRow.css';
 
 const flexRow = (props) => {
   let justifyContent = 'space-around';

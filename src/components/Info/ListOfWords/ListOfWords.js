@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../../UI/Card/Card';
-import styles from './ListOfWords.css';
+import * as styles from './ListOfWords.css';
 
 const listOfWords = (props) => {
   const words = props.words.map(x => (

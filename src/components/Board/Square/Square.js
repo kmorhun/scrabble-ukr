@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Square.css';
+import * as styles from './Square.css';
 
 const square = (props) => {
   let classes = [styles.Square];

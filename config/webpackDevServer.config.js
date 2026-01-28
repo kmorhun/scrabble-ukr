@@ -37,6 +37,7 @@ module.exports ={
       }
     },
     host,
+    port: 3000,
     historyApiFallback: {
       // Paths with dots should still use the history fallback.
       // See https://github.com/facebook/create-react-app/issues/387.
@@ -73,7 +74,7 @@ module.exports ={
       // We do this in development to avoid hitting the production cache if
       // it used the same host and port.
       // https://github.com/facebook/create-react-app/issues/2272#issuecomment-302832432
-      app.use(noopServiceWorkerMiddleware());
+      app.use(noopServiceWorkerMiddleware('/'));
   
       return middlewares;
     },

@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from '../Modal/Modal';
 import Button from '../Button/Button';
 import { FormattedMessage } from 'react-intl';
-import styles from './Confirm.css';
+import * as styles from './Confirm.css';
 
 const confirm = (props) => {
   let question = <FormattedMessage id='are-you-sure' defaultMessage='Are you sure?'/>;

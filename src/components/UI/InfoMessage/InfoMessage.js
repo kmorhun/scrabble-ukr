@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './InfoMessage.css';
+import * as styles from './InfoMessage.css';
 import Modal from '../Modal/Modal';
 import Button from '../Button/Button';
 

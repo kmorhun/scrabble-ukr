@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Letter.css';
+import * as styles from './Letter.css';
 
 const letter = ({alreadyPlayed, selectable, clicked, selected, highlighted, letter, value}) => {
   let onClick = null;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Bonus.css';
+import * as styles from './Bonus.css';
 
 const bonus = (props) => {
   let bonusText = null;

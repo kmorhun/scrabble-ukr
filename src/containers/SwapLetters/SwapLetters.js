@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Rack from '../../components/Board/Rack/Rack';
 import Button from '../../components/UI/Button/Button';
-import styles from './SwapLetters.css';
+import * as styles from './SwapLetters.css';
 
 class SwapLetters extends Component {
 
